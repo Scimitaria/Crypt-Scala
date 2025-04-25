@@ -89,7 +89,7 @@ def unOffset(c:Char,o:Int):Char = {
     if(c.isLower) ('a'+(c-'a'-o+26)%26).toChar
     else ('A'+(c-'A'-o+26)%26).toChar
 }
-//flip undoes flip
+//flip undoes flip, dumbass
 def unTime(c:Char):Char = {
     val now = Calendar.getInstance()
     val currentMinute = now.get(Calendar.MINUTE)
